@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+
+*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Cabin', sans-serif;
+            font-family: 'DM Sans', sans-serif;
+}
+
+img{
+       width: 100%;
+}
+header{
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 18px 55px;
+           background:  #D0DDFF;
+           position: fixed;
+           z-index: 999999999;
+
+}
+
+header .BrandName img{
+            width: 100%;
+            cursor: pointer;
+}
+header .icons{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+}
+
+
+section{
+            padding: 100px 6%;
+}
+
+header #navbar  {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+}
+header #navbar li a{
+            font-size: 23px;
+            text-transform: uppercase;
+            color: rgb(36, 28, 35,0.7);
+            transition: 0.5s all ease;
+            font-weight: 600;
+}
+header #navbar li a:hover{
+            transform: scale(.2);
+            color: #FF3D20;
+           
+            
+}
+
+header .icons li img{
+       width: 30px;
+       height: 30px; 
+       cursor: pointer;    
+}
+
+header .icons #ShowNav {
+       display: none;
+}
+
+
+
+/* ==============header reponsive design =================*/
+
+@media (max-width:991px) {
+
+       header{
+              background: #718FE5;
+       }
+       header #navbar{
+              position: fixed;
+              top: 97px;
+              left: -100%;
+              flex-direction: column;
+              width: 100%;
+              height: 100vh;
+              background: #D2DEFF;
+              text-align: center;
+             padding-top: 50px;
+             transition: 0.5s all ease;
+       }
+       header .icons #ShowNav{
+              display: inline-flex;
+       }
+
+       header #navbar.show-toggle{
+              left: 0;
+       }
+
+
+       /* ============wrapper banner section reponsive=================== */
+
+}
+
+@media (max-width:576px) {
+       #wrapper-Banner .container .container-text form {  
+             display: block;
+                 
+}
+       #wrapper-Banner .container .container-text form .btn {  
+             margin-top: 10px;
+       
+                 
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================section banner design========================= */
+#wrapper-Banner {
+            padding: 97px 0;
+}
+#wrapper-Banner .container img{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+           
+}
+
+#wrapper-Banner .container .container-text{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+          
+}
+#wrapper-Banner .container .container-text h1{
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00095E;
+            text-transform: capitalize;
+}
+#wrapper-Banner .container .container-text h4{
+            font-size: 16px;
+            color: #00095E;
+            padding-bottom: 30px;
+
+}
+#wrapper-Banner .container-text form{
+            display: flex;   
+            gap: 0.3rem;
+            justify-content: center;
+            align-items: center;
+}
+#wrapper-Banner .container-text form .search::placeholder{
+            color: #3b3333;  
+            font-size: 15px;
+}
+#wrapper-Banner .container-text form .search{
+           padding: 15px 70px;
+           outline: 0;
+           border:0;
+           border-radius: 5px;
+           overflow: hidden;
+          text-transform: capitalize;
+          font-weight: 600;   
+                     
+}
+#wrapper-Banner .container-text form .btn{
+            padding: 14px 30px;
+            outline:0 ;
+            border: 0;
+            border-radius: 5px;
+           text-transform: capitalize;
+           font-weight: 600;   
+           background: #e9472e;
+           font-size: 1rem;
+           color: #fff;
+           cursor: pointer;
+}
+
+
+
+           
+
+/* =============upcomming design================  */
+
+.up-content-text{
+       text-align: center;
+}
+.up-content-text p{
+       color: #7EB7FF;
+       font-size: 19px;
+}
+.up-content-text h1{
+       font-size: 50px;
+       color: #00095E;
+       margin-bottom: 30px;
+}
+#upcomming {
+       width: 90%;
+       height: auto;
+       margin: 0 auto;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       gap: 2rem;
+      
+     
+     
+}
+#upcomming .upcomming-conatainer .country{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;     
+}
+
+#upcomming .upcomming-conatainer .img-thumb img:hover{
+      transform: scale(1.02);
+      cursor: pointer;
+}
+#upcomming .upcomming-conatainer{
+       box-shadow: 0 10px 15px rgba(0,9,94,0.06);
+       border-radius: 5px;
+}
+#upcomming .upcomming-conatainer .text-container
+{
+       padding: 17px 15px;
+      
+}
+#upcomming .upcomming-conatainer .country h2
+{
+ color: #000973;
+ font-size: 30px;
+}
+#upcomming .upcomming-conatainer .country h3{
+       color: #7EA0FF;
+       font-size: 25px;
+}
+#upcomming .upcomming-conatainer .date{
+       padding: 10px 12px;
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+}
+#upcomming .upcomming-conatainer .date:first-child{
+       padding: 7px 10px;
+       background: #f2f4f8;
+       border-radius: 10px;
+       font-size: 18px;
+       color: #6d90f1;
+      
+}
+#upcomming .upcomming-conatainer .date:last-child{
+       font-size: 18px;
+       font-weight: 400;
+       color: #000973;
+}
+
+/* ================aboutUs desing======================= */
+
+#AboutUs{
+       width: 100%;
+       height: auto;
+}
+
+#AboutUs .about-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+       gap: 2rem;
+       align-items: center;
+      
+}
+#AboutUs .about-container .svg img{
+       width: 90%;
+       height: auto;
+}
+#AboutUs .about-container .about-content p{
+      font-size: 18px;
+      color: #6d90f1;
+      margin-bottom: 20px;
+}
+#AboutUs .about-container .about-content h1{
+       font-size: 55px;
+       color: #000973;
+       line-height: 1.2;
+       margin-bottom: 20px;
+}
+#AboutUs .about-container .about-content small{
+       font-size: 18px;
+       line-height: 1.6;
+       color: #6d90f1;
+       margin-bottom: 60px;
+       display: block;
+}
+#AboutUs .about-container .about-content a{
+       padding: 18px 28px;
+       background: #000973;
+       border-radius: 5px;
+       outline: 0;
+       border: 0;
+       color: #fff;
+       font-size: 20px;
+       font-weight: 600;
+      
+       transition: 0.5s all ease-in-out;
+}
+#AboutUs .about-container .about-content a:hover{
+       background: #FFC800;
+       letter-spacing: 0.6px;
+}
+
+@media (max-width:776px) {
+       #AboutUs .about-container .about-content h1 {
+              font-size: 40px;
+              
+       }
+       #AboutUs .about-container .about-content a {
+              padding: 12px 20px;         
+       }
+}
+
+
+#developer{
+       text-align: center;
+}
+#developer h1{
+       font-size: 40px;
+       line-height: 1.2;
+       color: #00095E;
+       margin-bottom: 7px;
+}
+#developer p{
+       font-size: 18px;
+       color: #00095E;
+}
+
+.Images-Effact{
+       width: 100%;
+       height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+       align-items: center;
+       gap: 1rem;
+       cursor: pointer;
+
+}
+.Images-Effact .images img{
+       width: 400px;
+       height: auto;
+       display: block;
+       margin: auto;
+       
+}
+.Images-Effact .images h3{
+       font-size: 25px;
+       color: #fff;
+       margin-bottom: 10px;
+}
+.Images-Effact .images .hover-icons{
+       display: flex;
+       justify-content: space-around;
+       gap: 1rem;
+       align-items: center;
+}
+.Images-Effact .images .hover-icons li i{
+       color: #fff;
+       font-size: 40px;
+}
+.Images-Effact .images .hover-icons li i:hover{
+       color: #FFE100;
+       transform: scale(1.2);
+}
+.images{
+       width: 100%;
+       position: relative;
+}
+  
+
+
+
+.content{
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       position: absolute;
+       display: flex;
+       background: rgba(0,0,0,0.6);
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       opacity: 0;
+       transition: 0.5s all ease;
+}
+.content:hover{
+       opacity: 1;
+}
+.content h1 {
+       font-size: 45px;
+       color: #ffe100;
+       margin-bottom: 15px;
+}
+
+.content p{
+       font-size: 20px;
+       color: #fff;
+}
+.content > *{
+       transform: translateY(50px);
+       transition: 0.5s all ease;
+      
+}
+.content:hover > *{
+     
+       transform: translateX(0px);
+      
+}
+
+#service-feadback{
+    
+}
+#service-feadback .serivce-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+}
+#service-feadback .serivce-container .service-text{
+       align-items: center;
+}
+#service-feadback .serivce-container .service-text img{
+       width: 40px;
+       height: 40px;
+}
+
+#range{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
+#range .range-containers .right-icon{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+
+}
+#range .range-containers .right-icon .range-text{
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+       padding: 10px 0;
+       border-bottom: 1px solid red;
+}
+#range .range-containers .range-text img {
+       width: 40px;
+       height: 40px;
+       order: 1;
+       padding: 10px 0;
+}
+
+
+
+
+#footer{
+       width: 100%;
+      height: auto;
+      background: #D3DFFF ;
+}
+
+#footer .sub-footer {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+       flex-direction: column;
+}
+#footer .sub-footer .footer-content form{
+       display: flex;
+       gap: 0.4rem;
+}
+ #footer .sub-footer .footer-content form .search{
+              padding: 10px;
+              outline: 0;
+              border:0;
+              border-radius: 5px;
+              overflow: hidden;
+             text-transform: capitalize;
+             font-weight: 600;   
+                        
+   }
+   #footer .sub-footer .footer-content form .btn{
+               padding: 10px;
+               outline:0 ;
+               border: 0;
+               border-radius: 5px;
+              text-transform: capitalize;
+              font-weight: 600;   
+              background: #e9472e;
+              font-size: 1rem;
+              color: #fff;
+              cursor: pointer;
+   }
+
+#footer .sub-footer .footer-content h5{
+              font-size: 27px;
+              color: #221f1f;
+              padding: 15px 0;
+}
+
+#footer .sub-footer .footer-content li a{
+       font-size: 20px;
+       text-transform: capitalize;
+       padding: 5px 0;
+       display: inline-block;
+       color: #473c3c;
+}
+
+#footer .main-foot{
+       margin: 70px 0;
+       display: flex;
+       justify-content: space-between;
+       
+       
+       /* grid-template-columns: repeat(auto-fit, minmax(500px ,1fr)); */
+}
+#footer .main-foot .foot-text span{
+        font-size: 20px;
+        color: #473c3c;
+}
+#footer .main-foot .foot-icons a i {
+       display: inline-flex;
+       width: 37px;
+       height: 37px;
+       background: #000973;
+       color: #fff;
+       justify-content: center;
+       align-items: center;
+       border-radius: 50%;
+       margin: 8px;
+       transition: 0.5s all ease;
+       font-size: 25px; 
+ 
+}
+#footer .main-foot .foot-icons a i:hover {
+       transform: scale(1.2);
+       color:#221f1f!important;
+       background: #09e74c;
+       
+}
